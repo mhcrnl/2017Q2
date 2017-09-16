@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+#Acesta este traditionalul program Salut
+
+# Strict si Warnings sunt recomandate
+
+use strict;
+use warnings;
+
+#Afisarea unui mesaj
+print "Hello World!\n";

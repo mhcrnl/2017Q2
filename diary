@@ -1,0 +1,370 @@
+octave:10> class
+error: Invalid call to class.  Correct usage is:
+
+ -- Function File: CLASSNAME = class (OBJ)
+ -- Function File: class (S, ID)
+ -- Function File: class (S, ID, P, ...)
+
+
+Additional help for built-in functions and operators is
+available in the online version of the manual.  Use the command
+'doc <topic>' to search the manual index.
+
+Help and information about Octave is also available on the WWW
+at http://www.octave.org and via the help@octave.org
+mailing list.
+octave:10> rows
+error: Invalid call to rows.  Correct usage is:
+
+ -- Built-in Function: rows (A)
+
+
+Additional help for built-in functions and operators is
+available in the online version of the manual.  Use the command
+'doc <topic>' to search the manual index.
+
+Help and information about Octave is also available on the WWW
+at http://www.octave.org and via the help@octave.org
+mailing list.
+octave:10> edit
+octave:11> edit octave6.m
+octave:12> 
+octave:12> beep
+octave:13> beep beep
+error: Invalid call to beep.  Correct usage is:
+
+ -- Function File: beep ()
+
+
+Additional help for built-in functions and operators is
+available in the online version of the manual.  Use the command
+'doc <topic>' to search the manual index.
+
+Help and information about Octave is also available on the WWW
+at http://www.octave.org and via the help@octave.org
+mailing list.
+octave:13> 
+octave:13> beep
+octave:14> menu
+error: Invalid call to menu.  Correct usage is:
+
+ -- Function File: menu (TITLE, OPT1, ...)
+
+
+Additional help for built-in functions and operators is
+available in the online version of the manual.  Use the command
+'doc <topic>' to search the manual index.
+
+Help and information about Octave is also available on the WWW
+at http://www.octave.org and via the help@octave.org
+mailing list.
+octave:14> plot
+error: Invalid call to plot.  Correct usage is:
+
+ -- Function File: plot (Y)
+ -- Function File: plot (X, Y)
+ -- Function File: plot (X, Y, FMT)
+ -- Function File: plot (..., PROPERTY, VALUE, ...)
+ -- Function File: plot (X1, Y1, ..., XN, YN)
+ -- Function File: plot (HAX, ...)
+ -- Function File: H = plot (...)
+
+
+Additional help for built-in functions and operators is
+available in the online version of the manual.  Use the command
+'doc <topic>' to search the manual index.
+
+Help and information about Octave is also available on the WWW
+at http://www.octave.org and via the help@octave.org
+mailing list.
+octave:14> plot(y)
+error: 'y' undefined near line 1 column 6
+error: evaluating argument list element number 1
+octave:14> y = 1
+y =  1
+octave:15> y = 1;
+octave:16> plot(y)
+octave:17> polar
+error: Invalid call to polar.  Correct usage is:
+
+ -- Function File: polar (THETA, RHO)
+ -- Function File: polar (THETA, RHO, FMT)
+ -- Function File: polar (CPLX)
+ -- Function File: polar (CPLX, FMT)
+ -- Function File: polar (HAX, ...)
+ -- Function File: H = polar (...)
+
+
+Additional help for built-in functions and operators is
+available in the online version of the manual.  Use the command
+'doc <topic>' to search the manual index.
+
+Help and information about Octave is also available on the WWW
+at http://www.octave.org and via the help@octave.org
+mailing list.
+octave:17> pie
+error: Invalid call to pie.  Correct usage is:
+
+ -- Function File: pie (X)
+ -- Function File: pie (..., EXPLODE)
+ -- Function File: pie (..., LABELS)
+ -- Function File: pie (HAX, ...);
+ -- Function File: H = pie (...);
+
+
+Additional help for built-in functions and operators is
+available in the online version of the manual.  Use the command
+'doc <topic>' to search the manual index.
+
+Help and information about Octave is also available on the WWW
+at http://www.octave.org and via the help@octave.org
+mailing list.
+octave:17> pie(y)
+octave:18> x = (1,2,3);
+parse error:
+
+  syntax error
+
+>>> x = (1,2,3);
+          ^
+
+octave:18> x = {1,2,3,4}
+x = 
+{
+  [1,1] =  1
+  [1,2] =  2
+  [1,3] =  3
+  [1,4] =  4
+}
+octave:19> pie(x)
+error: abs: not defined for cell
+error: called from:
+error:   /usr/share/octave/3.8.2/m/plot/draw/private/__pie__.m at line 28, column 5
+error:   /usr/share/octave/3.8.2/m/plot/draw/pie.m at line 69, column 10
+octave:19> abs(3+5)
+ans =  8
+octave:20> abs(3+5i)
+ans =  5.8310
+octave:21> sum(x)
+error: sum: wrong type argument 'cell'
+octave:21> float = rand(2,2)
+float =
+
+   0.74102   0.71069
+   0.14033   0.77931
+
+octave:22> float2 = rand(10,2)
+float2 =
+
+   0.185879   0.701035
+   0.097761   0.873620
+   0.514350   0.688886
+   0.066136   0.698307
+   0.489557   0.089032
+   0.187147   0.510328
+   0.270383   0.532645
+   0.691191   0.510375
+   0.454943   0.292086
+   0.090425   0.465191
+
+octave:23> x = (:, 1)
+parse error:
+
+  syntax error
+
+>>> x = (:, 1)
+         ^
+
+octave:23> x = (, 1)
+parse error:
+
+  syntax error
+
+>>> x = (, 1)
+         ^
+
+octave:23> x=1
+x =  1
+octave:24> x = float2(:,1);
+octave:25> x
+x =
+
+   0.185879
+   0.097761
+   0.514350
+   0.066136
+   0.489557
+   0.187147
+   0.270383
+   0.691191
+   0.454943
+   0.090425
+
+octave:26> y = float(:,2)
+y =
+
+   0.71069
+   0.77931
+
+octave:27> y
+y =
+
+   0.71069
+   0.77931
+
+octave:28> y = float2(:,2)
+y =
+
+   0.701035
+   0.873620
+   0.688886
+   0.698307
+   0.089032
+   0.510328
+   0.532645
+   0.510375
+   0.292086
+   0.465191
+
+octave:29> plot(x,y)
+octave:30> typeinfo
+ans = 
+{
+  [1,1] = <unknown type>
+  [2,1] = cell
+  [3,1] = scalar
+  [4,1] = complex scalar
+  [5,1] = matrix
+  [6,1] = diagonal matrix
+  [7,1] = complex matrix
+  [8,1] = complex diagonal matrix
+  [9,1] = range
+  [10,1] = bool
+  [11,1] = bool matrix
+  [12,1] = string
+  [13,1] = sq_string
+  [14,1] = int8 scalar
+  [15,1] = int16 scalar
+  [16,1] = int32 scalar
+  [17,1] = int64 scalar
+  [18,1] = uint8 scalar
+  [19,1] = uint16 scalar
+  [20,1] = uint32 scalar
+  [21,1] = uint64 scalar
+  [22,1] = int8 matrix
+  [23,1] = int16 matrix
+  [24,1] = int32 matrix
+  [25,1] = int64 matrix
+  [26,1] = uint8 matrix
+  [27,1] = uint16 matrix
+  [28,1] = uint32 matrix
+  [29,1] = uint64 matrix
+  [30,1] = sparse bool matrix
+  [31,1] = sparse matrix
+  [32,1] = sparse complex matrix
+  [33,1] = struct
+  [34,1] = scalar struct
+  [35,1] = class
+  [36,1] = cs-list
+  [37,1] = magic-colon
+  [38,1] = built-in function
+  [39,1] = user-defined function
+  [40,1] = dynamically-linked function
+  [41,1] = function handle
+  [42,1] = inline function
+  [43,1] = float scalar
+  [44,1] = float complex scalar
+  [45,1] = float matrix
+  [46,1] = float diagonal matrix
+  [47,1] = float complex matrix
+  [48,1] = float complex diagonal matrix
+  [49,1] = permutation matrix
+  [50,1] = null_matrix
+  [51,1] = null_string
+  [52,1] = null_sq_string
+  [53,1] = lazy_index
+  [54,1] = onCleanup
+  [55,1] = octave_java
+}
+octave:31> 
+octave:31> a =[1,2,3; 3,4,5;4,5,6]
+a =
+
+   1   2   3
+   3   4   5
+   4   5   6
+
+octave:32> b=rand(2,3)
+b =
+
+   0.212377   0.041715   0.446478
+   0.279118   0.785110   0.285673
+
+octave:33> 2*a
+ans =
+
+    2    4    6
+    6    8   10
+    8   10   12
+
+octave:34> a*b
+error: operator *: nonconformant arguments (op1 is 3x3, op2 is 2x3)
+octave:34> print -dpdf foo.pdf
+warning: print.m: fig2dev binary is not available.
+Some output formats are not available.
+warning: print.m: pstoedit binary is not available.
+Some output formats are not available.
+error: __fltk_print__: A(I,J): column index out of bounds; value 2 out of bound 0
+error: called from:
+error:   /usr/share/octave/3.8.2/m/plot/util/private/__fltk_print__.m at line 157, column 8
+error:   /usr/share/octave/3.8.2/m/plot/util/print.m at line 422, column 14
+octave:34> plot(a,b)
+error: line: number of X, Y, and Z points must be equal
+error: called from:
+error:   /usr/share/octave/3.8.2/m/plot/draw/private/__line__.m at line 52, column 7
+error:   /usr/share/octave/3.8.2/m/plot/draw/line.m at line 54, column 8
+error:   /usr/share/octave/3.8.2/m/plot/draw/private/__plt__.m at line 291, column 15
+error:   /usr/share/octave/3.8.2/m/plot/draw/private/__plt__.m at line 253, column 14
+error:   /usr/share/octave/3.8.2/m/plot/draw/private/__plt__.m at line 113, column 17
+error:   /usr/share/octave/3.8.2/m/plot/draw/plot.m at line 220, column 10
+octave:34> C-p
+error: 'C' undefined near line 1 column 1
+octave:34> C-p
+error: 'C' undefined near line 1 column 1
+octave:34> C-p
+error: 'C' undefined near line 1 column 1
+octave:34> 
+octave:34> usejava("jvm")
+ans =  1
+octave:35> sizemax()> intmax("int32")
+ans = 0
+octave:36> vectorq=[12356]
+vectorq =  12356
+octave:37> vector = [1 2 3 4 5]
+vector =
+
+   1   2   3   4   5
+
+octave:38> Start[:Increment]:End
+parse error:
+
+  syntax error
+
+>>> Start[:Increment]:End
+         ^
+
+octave:38> v =[1;2;2;9]
+v =
+
+   1
+   2
+   2
+   9
+
+octave:39> size(v)
+ans =
+
+   4   1
+
+octave:40> exit
+
